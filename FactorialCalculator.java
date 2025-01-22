@@ -6,12 +6,6 @@ import java.util.logging.Logger;
 public class FactorialCalculator {
     private static final Logger LOGGER = Logger.getLogger(FactorialCalculator.class.getName());
 
-    /**
-     * Метод для вычисления первых n факториалов.
-     * @param n натуральное число
-     * @return список факториалов от 1 до n
-     * @throws IllegalArgumentException если n <= 0
-     */
     public List<BigInteger> calculateFactorials(int n) {
         if (n <= 0) {
             LOGGER.severe("Input must be a positive integer. Received: " + n);
